@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC WORLD</title>
+    <style>
+        /* Reset some default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the navigation bar */
+        .navbar {
+            background-color: #0a0c0a;
+            overflow: hidden;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(248, 237, 237);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* On hover, add a background color to the navigation links */
+        .navbar a:hover {
+            background-color: #0eec6e;
+            color: black;
+        }
+
+        /* Style the active link */
+        .active {
+            background-color: #12a317;
+            color: white;
+        }
+
+        /* Style the search button */
+        .search-container {
+            float: right;
+            padding: 14px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #4CAF50;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .search-container button:hover {
+            background: #45a049;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align:center;
+        }
+
+        nav {
+            background-color: pink;
+            text-align: center;
+            padding: 10px;
+        }
+            
+
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            
+         }
+        
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .movie {
+            width: 30%;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            margin-bottom: 50px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .movie img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+
+
+
+        }
+        /* Style for the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    /* Style for the dropdown links */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a class="active" href="/home">Home</a>   
+    <a class="" href="/actorsprofile">Actor Profiles</a>
+    <a class="" href="/toprated">Top Rated Music</a>
+    <a class="" href="/moviecategories">Movie Categories</a>
+    <a class="" href="/about">About</a>
+    <a class="" href="/">Log Out</a> 
+</div>   
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+</div>
+
+    
+    <div class="container">
+        <div class="movie">
+            <img src="https://static.toiimg.com/photo/81431019.cms" alt="srikaram">
+            <h2>srikaram</h2>
+            <p>Rating: 8.5</p>
+            <p>Cast: sharvanandh,Priyanka Mohan</p>
+            <p>Story: Srikaram was a young artist with a vision to blend traditional India art with modern styles.He faced challenges but persevered , eventually gaining recognition for his unique creations that bridged cultural gaps and inspired many. His journey showcased the power of passion,creativity, and determination.</p>
+        </div>
+
+        <div class="movie">
+            <img src="https://assets.thehansindia.com/h-upload/2020/10/02/1002826-orey-bujjiga-movie-review.webp" alt="Orey Bujjiga">
+            <h2>Orey Bujjiga</h2>
+            <p>Rating: 7.8</p>
+            <p>Cast:Raj Tarun, Malavika  Nair</p>
+            <p>Story:"Orey Bujjiga is a Telugu ramantic comedy film where two indivuals,Krishnaveni and Srinivas alias Bujji, fake their identies to escape an arrange marriage .Fate brings them to the same village,leading to comical misunderstanding and eventual love as their true selves and revealed.</p>
+        </div>
+        <div class="movie">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQTExYTFBQWFhYYGR0ZGhkZGR8dGRwfHxYYIh8cHBkZHyoiGR8nHRkZIzQoJysuMTExGSI2OzYwOioxMi4BCwsLDw4PHBERHTIoIic4MDAyMjAwMDAwMC4wMDAwMDAwMDAwMDAwMDAwMDAuMDAwMDAwMDAwMDAwMDAwMDAwMP/AABEIAK4BIgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAIHAQj/xABCEAACAQIEAwYDBgMHBAEFAAABAhEAAwQSITEFQVEGEyJhcYEykaEHFCNCscFS0fBicpKisuHxFTNTgkMWNGOz0v/EABoBAAMBAQEBAAAAAAAAAAAAAAECAwQABQb/xAArEQACAgICAgEEAQMFAAAAAAABAgARAxIhMQRBEwUiUWGBMnHwFCRCkeH/2gAMAwEAAhEDEQA/AEBlrWKsd3VvhHCTfuBJyqBmd+SqNz+w8zTlqjVIeGcPu32yWbbOeeUaD1Oy+9FrvY3GKJ7gnyVlJ+QNMOA7V4PDIbC2yLU8tWb+0x5kkH5HlVO72su27ubDg3rZMhNm9yeXtUjlrn1CEJixfwVy22W4jIejAj5TvXirTdju11q+O5xWEvW1bQNo2QnmpAkUD4jwvuSrKwuWnE27g2YfseoojID1OKEdweEpg4LwK0SrYm8toNqLc/iMOsflB09aDhKI8e4RinspiM+QMRltgQYiAzPuZjTyoO9C5yrZqMdzE8OsnKllLhHxayy8pYPy8xUA45gWtArhk7xiALbKFkE7q+zDSdDXPbuDxFgh8zBuobX59KrpxO7qDfdVBkgNoT1jbfypA+3RjFK7E6newOCaR3RRx+RX1PTmQZoFxLhiklrDEqvxW2EXU/vLzHn5ik+zxZxql2Sfy/vJEE+xppwHEHfu3zqbw1UXWthyv5k8IUZCJEMemmlHYwaiUrmFaDNUb9kZZg06cR4ebbkEaETA5A+fOheJ4XKkCgHnaRSNqa0azFFbmF1PlUOJs5EZyJCgn5CqXOqBsVcCatudgIk/PlVU3zc3gKNgNvfqfM1VvXi7ZmMk/wBQPKreEsXHHhRmOwAUmflTGl7ict1Ic+vX+vOo83TcfOi1jsnjbnw2HA8/D+tDsfgrllstxSrCgHUmgYTjYCyJJhuJOsBtV2MgZgPI+VGhiTlBDSpGnvSvnotwM94Da1knw7dNd99hp0miRcANdwrYvAmDFXMG2ZgIoSloHQmr+DxJQrB0B2jpUTxK9iGlsmsyVmGxgukaQTpUgtUVMg4kTW6hdIq0UqtjFYXLMQVOaR7b+w/WqbVEVbMgfTU7UKxXHUGlvxHqfh+W5qt2qx0v3SnQat69Pl+tBKUmVValvE8SuMT4zr00HyFRs5G7En3n61AGrJoR7hfhvELy82K+XL56cqa8M6XgWUhSFDEfCvnBJgenypFwjkHRiv6UdwGNS3Bach0zqZC+qkEHfUERSNweIw5HMOBa3AqThio1jwKmX4gyuYEzKsH1WTsBI2FSDD0wYGTYESDLWVZ7isrrETmL4t1Yx2O7jDFE0a63iPOBsPqfnUSNQvjl2So8p+Z/2oZPQlhKZvATIk/T5c66X2SwAt2gxANxwCxj6DpXMbfxKP7QrpGI4rksjK62hAm4wmOiov5m09B57Vmzk2FEviHZhzibWUtPcvAlVAPh+KeWUDnMUBXELcLA5QGXvLtmQWUTpdAGisJ8QG+/WZezly4ykXwz23J/7ohmX0AEdQOVFEw1jBki1at91d3f4j5q4O1SVwt36jst0Iv8N4eWuhcoYIwLzouUHWTyFTcV7Wm4/dXrZW3mgONUEnwz/CYq2vFrad5hDlRrRDjkbqHUEnmQIHtUPEez5cLcS9lF0DPaZZHkZ5aGmyZgTR6qcmPXkdxa7Y4UKVAJYnWdYgehy/TnSsKf8ZwV/u9y2W0VSQfIa5TPKuf5tJqvjsGWvxJZlIa56G13Aj6elF+FY5VD22ysLuVW01IzaieU7aUHQTrUtuZ06/WrmRnbOKLZbD4dkKghVXIOQg6CdQAQRVG3h9P5UE7H4Fu4DO0T8M7xqfqxNNWEsoBAOtZ3YdyigwaOGWOan2NQ8b4erYW/btpLNbYKBuTl0+sUUxNgg9POvMVjLNlQbrhZ+EE+IxvA3P7Umx4I5hC3xOb/AGcdm0vuz3lkK2UKevORXWeH8Mt21ARAo8gK5zwntRYweIuLldrRd3VhBMM0xlHmSKdk7e8OCq3fiWAIXI8ieoy02YOzX6mjEQq69GGb9mBXI/tQ4b3V0FXORxIU/lPMA9PWn3DdvsHe07wodfiUgaedB+3+BXE4c3UGYWwWzAz4eoj60mK1cEiPkUNjIHc5CRVnAnUCJkiPIzofSYqF0g+VT4QwV5ksP1FenPLha4xLGNvl8p5V5bJnxGK1vNJPqf1rCug3mpEXKg1DOAcj4RJUiBrqabWwxyiRDQJEzB9edIfDsQbbhg0RG+o+VNGE7TM7hXVcuksJBHnBO1SfYQ0DzLdrCktFAu0GIi8HSCtkHWdGPP25eetPOFwskHlvSD2stjPeCEQHb/UZAoI5YwaACJ11ixJO5JJ9TvWlbGstCTVYJqRXlG8LgwRV7CcFRjqJpDlAlRhYxcsM35RNELOIgyy5TzMaH1jT5inzgHZy0RqsD0FGH7JWGEEfpUjmvoRvjC9mc/4Riu5uZlBNswWXdTDAjMBuobXaR6U7WFFxQ41BnWImDqRHKaDdrOx4w+HfEWSUNsrmAPxBmCnTbnV3sFcL2BmbNlVR9XI/ykUWb7dhFK2al/7tXlE8tZUvkMnoJzxaC8XP4hHSB8lH70bVaA8UPjY/2j+ta3/qnDqQjQz70/8AZS9buqM6hsuokAwfekS0JIjyphw2M+63hbPNQxjbUn5bVmzqWXjuVxNR5jpxbGKpVmaIEKJgknQAedVmQmy1tsSFZyMtuyQ5mRId/MaQPOpbWOtXFUsFYeYBj50Q4bfw1r8SbSgc9B86wo1HnubIlfaBbfD4uzdTfuo11+FiOe+jfSjXDuOq9pCTJKiY69Kr9tlfHXke3bm3bUgN/EWOpA6aCOtC8PZaxAZTptI0rTkUMgvuSQkMfxC/aDiriw6oplhlmJgHf6UI7KcLRFss1tbty4wYAicqjYeRJB+Ve4rGNcYBTBO/6Uw8PxTGx3aKlt1Ur3kkyQIDBfhnnrNSFomv5lAoZrit9pD2e/AtAZ/EbkbAHLkX+98TeWYUG4Lgy9wctfl1NVr+GuI5FwMWJJJMkkzqepmn77P+x9+4hxJtlbWU5Z+J55hN4HXnOlegihUAHNTE5tiTxD2AspACMCABpOu1WmsAeKStDm4K6N3iEyDRTA4kNCXAcw51J/yJyk+55akafF86o9rMAXsB0Xx2zmgakqRDR9D/AOtH1w4r1bEbVMOFaxHFziIwL4jELat6vdfIPIE6n0Akn0p3+0nsvl7hrKjLZsizHM5DK+pgtv6cxWvFeK2uHX++FpDcOIcNAAY2ypJynSILCiWA7Xri77WHWzkdgPExVwPD8QIymZOimZiqu7mio4l0ZNhtOZpm2AMkgCDrJ0Ee5robdiVQZDfvpaMyne6mdwQsKo30E0Zt9isHZud+isSDmUFyyjzANC+0XEHIJEzqSAeQBqb5SSAsqVB+4xO7NdmRd4i1oS1iy0klc3h1gGPOmH7UOHWxcsXvzxdDEgahSqoDAHMvHkCKJfZZhmWzfvMyjvXJLEwFVNDmbkP50Tu2vvCXLpT8N4FrMNTbUaOQds7F36wy0zZSrbHocTNoNdR75nKjhTExC9ajKxXQr/Z63cssLmZAgLLl29IpKxXDLiAOwOUiQeXv51dMoaSZSJQZqYeznZLE3ytwr3do/mJ1Poo1+cUvgA0a4P2lxOFt3bVtzDiFJ17ttPGs849tulM4YjiKK9x17QY9MNb7iy6tiYWF3KiYLMJhdNp5kb0kcV4W7WwM6lndQY5ZngnbbQ/KqWFuZSXLMWPiZiSWJmJJ5medXbmIJZUB1zQP/WxdgfUUAmi8Tr2YQPxThIFoXUXIozBTqe8g7k8jFBrIYkZQT6DWnDtQuSygRjlRVGUbfB8R8zNB+EWQqTzNIuQ62ZV8YL0JthsVbWBqCNwwg/WjnD8faJUFwpPI6H5GgGPt7npt60RwHE7VzwOIfo539CdPak0DC4xcoaj/AMHMjl6g6fSi9s1z23nwqm7ZbLGrW2+EjnA2BjpFGLXbS2lm2xm7cac4t65CDEGY/oUoQjqBmBhftldy4DEk/wDjgepdQPrQnsVgGs4dc85ngwfygCAP396lw/FV4gpslHthLlu4cyxnVSTA5fGFnyo1koseNTIseeJHNZW/dVlT4i8zn9sa0t4sTr7/AFpryQlxz+VD9QRSpi+nkB9K0k20avtnlg1HcYi6WOms6bekdK2sbRUmJsSAfzDf0poI58HwiXbYuJV3jtsLhrmgBKx89KWOzvF2w7QRnUj4RoQaKY7jq3lKFcs+cmsDYH+T9TUuVNe51bhfZfD3bVu7+IMyKdGEfCNhFU+M9mbQV7Z7xxlkNIGSTv8A2j9K17EdqbAspZZvEoAnlooGvNdqPX2l0PUgex3rf8eyfuQT+on1OR4rs73dzKSSeRGxGuoH7cqJ4LBFFk+Ly2injjvB7OUlTkylQCT4S7NlC9ST19KSsTi3krGWDH9ony8vOsT+PkZwompcyBS0q/du9uwVBCbjYek103swV7tTbzFCukxIG0adKTeAYDOTPwjVj1M/v+g86cuE30t5lMKs5l5ATuNfPX3r2k8f4sWo79zx8+cvkuWuJ8IV5dAA3Mcm/wB6Xr/D83LK1OVpwwkEEeVUOMYLMpdfiG8cxXnZ8P8AyXuasWT0Yrpde3o4lf4hVm1fQ7MPnrU2+kTVa7we2+pBB8qwlh7mrU+py/7TuF5Mf3tx2Np1VoEEr+UhQdDqAfeqNrAcPYZreLuox0CmyZnmfi5+tXPtA41YXFJZU98tqQ7TIkkeAEbxGvmfKom49hiDlwtlWBGUhTJ0G9brbQSaVZ6lvs3xy9hzcw7/AItk/A5aMoJmQDyIO3I1pxbi5OZE1ZjHkPOelBbuONxoAIH6+3KrnDrGZwpHMH11qTAA7GWUkjUdQ1YwFlLuGw967cW25BcBj3V25oUV1mIMET6CunLb8q5B2twbXLd1lGbI1sAR6jQ9Tm+lWuA/aVicMO6xFrv0QhZY5L6wPhYEeMgcyOW9I+F8iAoeR6iNkVGIInU3w4aQRIpD7ZcUsql3DKdRpvInf3Mn2pq7Pds8HiwAl5UciDbuQjj2OjexNc9+0vg9rD4n8O4Xa4M7rIOSSIGm0jXWl8fGd6cGB8gI4i4oAGtYhk1qQSoqS0uo/oV6gEzGT2o676DSqfEeINbv2rmuVGkee2aPbSiOFXReQLFQdAJid6r8Qsi9K8tlPn19JpMjgcGMik8ib9pVQrNuDbzAq06kPrl31A+lV8CYGtDwdFU6EHUeYq+rdOtZiKFTQGtrl7GYEuuZBPUUKxGCHp1BGvyNN/Zi3+ZiAANSdh78q17a8Yw95FtW3TKhBeN2A3gjl+tTxsQ1SuRQRcWOC4S7fuKmd+7kSCxgidoo12ys2sJj3t27Yt2yttwVGxNsax0kHbzq72c4xZu4i2uQJlBAIMqwkR0gjoepot274V99uriMNFzw9235fgJMqW0PxEb8udVDmztIlBxUAXMQcwZXGaB4laNOXnTZ2VxN+7Zz3spknI0eJlkjMQNNRHrQKx2Se5lRwVWZdmADQB8KkakxpOg3O9N6qFAVRAAAAHIDYVNzEMkivK0zVlJBUTcev4DmP6igX/R5tG/caJJCgdFgTR/tAs2ANRJLH08/aTStxHiRYBDy0A5AfvVcVsSYXIAEHmFmN95qbA3Rmltf5xp9f1qGzYzGr6YGOQPTr7da0DiSIM2+6d0AWfxEawNOsA/vFZ3IZM8tMgRp5/ymq9yw2YZiSeR/rnU1qwWUqDoDJnfpOlGLLdm93DKVJMifL0MU+dke0DAKuebRjUzKEmAddYBIJrnPflVyEbSQ3OTy96IcE4itvMCZBAzdB1j50eYysV6nSO2vGVtW2wwU3HlHzTCqRc0YkbyyxA31pZwKRmdjJM+I/U/LMfatcbZN5pzCLanLmOrLoAB/E2hPzq9wrDh7tm0dmcA/3Rq30Uj3rfi1q5lyE3UZrf4FpECgMRmb1In6CB7VtZuZtW1PnVXF4rvC1z+InL5KDpXiXoFaUbiZm7hzCMVMqSp8j+1GuHY4vKsNRz5Gl/A3QTHnSb28+0cWGbD4Jgbw8L3tCtvqE5M/nsPM7Z86rXMfEWviOfani2GwMtfuhAdVX8zeSrz/AErlvaz7Sr15Tbw5W1bYEErmN0j++QAsj+GfWkjH4x7j95duPcdt2clmPuarte5KPn/KvMXxkVtqm45XIqTYTCm5ct20Es9xVUcySQI18zT5h+x98nL3Lz5rA+Z0pDwmPa2yuo/FR1dXJ2ykmMux1gz5Rzr6J4JimxGGs4jKbZu2w5TcCenlzHkRS+SWFES3ja2QYh8J7D3rTF3CzyAIJA6+tGOHcA8eZwNAdD/MU4BI3rQqCOmlYWLHub1oDqc17b8QTDYDuioNzEEgcoUalvqAPWuZ4jE3Lpl2ZjpqTJMDck6kxzNPH2vgvi8v5bNu2oHTMHYnp0HtSSq16WBdUH7nm+Q+zmQqTsdaurjLg/MWER4vFp011A9KhIr0CryEvWscD8QynqJK+/MfWmXs5wdLn498lcOuuhAL/wB08hyJ9vRMpz+yniDDEHD9yt7OC1tWKgow1Y2y/hBKyY0nLvU8obQ69ymNhtzJ+HdmMReFw+K1hz8Ktq41kME/KYO7QTJqHHcCuWLRHxRqGX9x+X9K6Bj+C27ivirdrPeuBcpLZUYKwnRDDOQCAWPTaKk46LdvxKCC05EJkk6TH9kSJJrz3Y/+TUpE41xTDllF9OX/AHAPo37Gq1u/GulMpw5t33B1Dk6Rprvp03oHx/hZw7Sutq5OU/wnmpP6eVWRg32mB1K8ie/fL962LKGVJ1A0J8j5VLZ7LX3BCAM86qNWA9DvUHCL2hGbL5g0fTspjGBv4d1ubNCORcGnIn5VxbU0OIQAws8wRjMBesWshlUZpbQpczAQFbNGmpOhM11DgPFGv2Eumcq2gbtzKQhaYgE7wBJ82ApKxOKxl6y2CxGd7hcKgcjMrBhuw1IETOulERh7Vq8mB76/ZwwbNiFZlZQ4AZSr5ZCMTOvlSvTCj3CBzx1HS5AtC6zKgYgAMQCZ6a6nyqC6CNwRQS3xizisQSWnC4O2TmA0YqPGw6yYVfIHrRzhmKN+13+IdVS434YEKVH5Vk/EY396mU9CAiuZDNZV3/pg/wDKv+H/AHrKGjRNhEntZhmIFtASFAHTO7bL5xvA250hvrB5866Fxy/duHOLcEc/yoDsPNzpMaARPSki+pBYGDB039ZrRhoCouS+5vw+14xR+0Awg0A4YTmjpqT0ozb1Omopn7jY/wCmRX8IpY5TW2C4UxMBhr/XKpFVZg6UUwtgpcWIMmp7ESuikdT3C9kxddM8qDuRsNNxO9RdrewRw96Ld05HAIzRpGjAkbeVMf8A1K3bUO7qoEGTMEzEADfUUX7Q4m3ft4O+jZkZnWR1Npm1B81NURtpJ0o8RKwtgrdyKCwW2G03hASSfQTRXOLWJt9ArNI89P0agvFz+KWWVEsmm8f8Gp+MY2VtXR+S2A/pqD8tDXqoOB/aYMnBIP5jFYvSi+ag+X9Hb515c3y7Hn5VDhrZXD2tQpKBpJg6+R2gR1rESdVBcc4+H3O519KqooTMx5gLtn2pa27YRfBnQE3Q3iGYsIA5aDrzrnr4YochiR02I6jqKI9q8cb2KvXCZGbIPRBlAA6aGtcOvf28m9xNU6sOa+ZP6x1NYsjEtNaLQgxl1rXLrW55GsikjyFhAPoa+q+C4UHC2AQARZtjTSPw1+lfMVq0WTJkUtchVYg5gTcUAjXnBX0Jr6sw1rIir/CoHyEUrAHgwgkdQdieHNy1odc4fcnRW+VM9ZFZ28dTLr5LrOCfaxw97eL/ABNBetIeslZT1EMU/wAVIZXlXZPt8sALhrsagXV26KHA+aVyHHLDyNiAfqQfqpPvWhBqKkWbYkmVqyKtW7CG0zS/eB9tMmSF982ZusQDUWQU0SRRUuHvFGDiQV1BUw2n8LDUHzrfC2gbiAjMMwkGYIGsGCDrEaEGst2we9bRVUNA13LwqyfIHfWjOncOG3Fw2C765e+8+HvLYCBHKsJVWYaN4iZYgb7Us8SxF26MLxBviVbi3VX4cmZCVA/sqSRzJWjX2fXBieEW1b8ga2x5xbYx/lIqrwSwWwTKRPd3y0HoZB/WvJyMVyETcg2W5W4pw4ZsybHXMOc7GekVUw3DUuK9q4oa2+45qeTDz50R4JdWHwp+KwfBPO02qHzy6p/6+dS4ezDFtFCiWY6ADz6Ch1Gv1OccT7MPh7jIz5cozBiDldeTD9I66VLw3iV+EUMFVGzQCVkx+bTUfypg7YdpcNjF+6orQrf/AHB0CtIgZPiKE6E6bAwaU0tNaY27oKMseIaqZ+FgRuD1rQditmBSL44jHhOIDD3beJuFrty9mEjQI6tDIGLblSp8SmQwiKsdosal7E2LmR7YujJcDRqVIIIIOujR7UI+7m5gryMZKkXrZAP5BlY5huCDBBHIHyrbDW3v4dARL2h3qg7sIhgD5gAjzFIQOD/EviUMG/I5/j3GjD8D7q02G7gtaZy9x7bQXtO5a2g2MgoAQToCYmaB8S4vcu4lGA7oWQEs23HTQluQuE8vSDTN2G4yLiW1cyxJzHbXl6QoUD+8elUO3/DR3xyr8aC5oNSVJDgeeUIR5iuBJBuTFXUI2+JXCAWukEjUd2dDz51lWsFiG7tPCreEa9dBrWUIIF4tN26li3nNotJG7ZZkgAbjSB+9K/ayzGIutGUErlAmNRECfSmXsxxe25XKjBrudg3xKAu9swZU6TA01FDO1GHBujxSHXQZSArAn4WP5tyRvpXY7RqMBphAHBxEg7yZn9KkbDM7AM3dp/GZgdNF1mvSuRs3OdfWifeLcSIHmKuW5uKq8VF437yLmzggsRlO8DY77GjPCsLevW7jBiHVc6xO6mT9DUHc20cA8zHX6U1dkAq4i0BqHZkM8wVM0rN+oyoQeTE/g904jE2zfLuRIZJKkHll00PmZrqPHMMcLhEtFswN5nDaf+MAjTQGSdvOhV9bSY25ZHhuIeaxI6g8wf50R7f8QT7rZsuCWLEgDcxpA5jU6npVENtUXWqIiRYxnenEjoyuvyg/6a0uYnwHmCNqqWbN+zca5etNbDMV1EBhGw8wOVe3d8o1zRHmCdq9LGSBqfUwZRbFvzOqfdlVEETCLIOs+ESQeRqviylpHvA5MiM584BMMOdXMaSGPL/jl1FKvb3HZcFdUbuVT2LjN/lBrQxpbmUC2nLLjk6nc6n1J1rezfNtlYcjI/cfKtH51oTIivOmyS37mZmYbFifmSa8RZIA51vjGUpaZUVNCrFZ8RAHiMk6k5torbh9gMHlgCFkAzL+JQVSOZBJk6AAnlQnRl7AYFb3EsJbIzL3veR/ZtoWUkdCyg+9fRtcO+wvBZ+IXLx2tWDr0NxlCj/Cr126aWdN6ytM1ezXTolfbPhycEl0b2b9t/Yyp/1CuH9oQpvOUMp3lzLoRoXMbgcw9fQv2jYXveG4pP8A8Rb/AAkMT8ga+dsSxZSehzadGIYf/toidI8EZW4s7rP6j9WSopqzwTE93dVsqtKssNqNRI355gtb4riS6r3FkAEjRR19KadK2DaLi+v7Gq1q6YI5EzRDC8Syh2Fu2vgI+Efm00896F21g10E6X9ivFI+9YYnRkF5R5iFf6FD7U49nsP+BdHJif6+dch7E8Q7jGWXJIVibTkfw3Bl+hKn2rtnDLlvulKSFE784JBP0rzfMWmv8zZgP21FDhHDA+ONzPla2rLlIkMDtOo2MVvxzhd2+GW4x0MjL4RPIlBofXerXZa2Xxd9+UkfWjmItopJJ9qzFjL9GcnuqjsbV8ZLyaZx+boT10qW/g5v2w3iVbVpDGneF3bKp6DUzHJD1pm7WcGRytxEglG0nUwRH6n51Fw3g/4FpjMiN9wQJA9ixFWGXi5xFkQphOC271u3dKC1dFm7hbiKoCNDROXkZgyN+dLHZ6yRYU/mttew7f4GdN+njHyronELqm0t1dC7SR0bIM31WaWOyOEVu/Vog4m24kTqSyn/AFUQx6M7G2tn+4/7ilhcc1i8LuoXcx+sdd/nTPxLjTM2GvsNEHi5yrqni9iDS5j8IVL22EQSp9iRUfDscSqlTmEAEE9OXuKtmTU2PcjhfYc+p0FDhoGqVlBkxQgeKsqVmPrFNONOpzIcm8ZdIncVVxvGL1wjM88wDr5c9BQ928e+hqO9c8a1t1HcybGErD5hHMVKt0rtVS34UR/4i8/+uX+ZqUXxvSMOZZW4nqFjcFydV+H5Va4fxe9buIzwSGzLBg7fQUKuKzGZgdD/ALVbwuCLRN23BO5mR50dR7gDtfEZ8VefEXLeJe4WvAZG9MxIGnIEmj3aO/h3xFoXLhQ2kVj4ZXVpgkag6fWlTB8OFlku28QLihoYajlvE9aq3MXnxj5tc6/LSBr7CuUU1iFnYCNHbvAtiVtvYAuRcdyVIkZgI0J11zbcgKAYLsdjLyQyKgHNjqB6CdxsN/SquPxT2Wt5WIzHKQT4WAP6+dXv+u3h+F3h0MqdiNNpBj6VoGU7WZnZbFR0N1gCVBKgeK0WkgfxKSJQ+W3LzpL+0zHKVsIHBDMzz5AZRI5GWOnlVgdpiXS3cQKV/wDktyGXzg7/ANCK17Q9rlXELbKjJbsqFvWlXvVdlTM6C6SqghSuXT42MzVnzhloSC4irWYhd4JOorR3HIifWm3Hds7D2btsYVVdluhWGXwZ2YW9hPhtXbq6cysDTSzju3Vi42IyWrhF9cozAfhju8QAADcIYBrlswfDoYCkCoSsSHvgJkiTIPymP9Rq+toWh8QNxhrqIC849Tp7NyNF+C8dS1Yw1oI3e2sQLmdcoUglswOsuWVsviAgTqRAq6vaXDqbne2Llx3xC4jvPBIVLls20AKyR3a3EPiAlzoY0Fzo8fYJYC4fEX9JuXggP9m2g+ku1dDbHKDE60odgOMriMMt4J3eckFZ/MoCkySSZImSZ5cqMXS0Mo2MmZ65I0mPyn56UJ0MDGL1rBjF60Be4MqrJUrzneZzaRprHM7VuuKXMGkACSRO5acx9/0FdOhXipV7N22dntun+JCP3r5x+7sbLOec2ykHMCluZ9NFH/rX0AuLWFh9QQd/P+Vcnvca+7YniFi4b7NfuaOjeNQBcjxFwYynqfh2OlETogBo16aj21/lU1621586rofNQJAg7nTbnVvC8QsqmGs3Lbutq+928JWHzC0oRegy2hJP8RqXtP2h+83ziED2S6jOveSM4kF1Khd1CnYaz6006DMegUd2Nxq3m38hVdTrWMTyPzrRG1roJYzECRuNR5Hka7XwfiAugJb/AO2bNvLHIlASPrXEpprwXbC9h8JYW0toHVSzCSSGI11ECIrL5OIuBUvhYKTc6xwbALZXIurGST1NaY3CxqdRXNrfbPGZGb7/AIS2QWAAQsxgkSIQ6GJB6RUT9r7zyrcWvNP5bWHgkx1OXnWYeIx7qUOceo5dobuWXPwpbOWGy6mZM5TqAFgaTJ6VJ2aQnAYZ3JZrqvcYncl7jGgHF+F4nEcPsC05uXe6BuqzQ7FtYlviiYieVMXZ8kcPw6EEMloKwO4IJB95EUNKQj9xi/3CXGGbDMByf9qEcLPc2b1w/wDkTf8AviiPDsciKVuMFLS4B5gCD8pHzFLPaLjtnuxh8hcM6kkXAoBnNBYKRAG/XLSqvUYWbhrieHt4xHe1bXvRBzbF4+L1kbelcs47aKXSGkKwBiIAPMaeYmnThHGwjnISFnwgmTHKTVf7RQjHD4hNC5ZHHIkAEGOu9aMeQkUZMpTcdRIhf4j9ayi+YdB8hXlH5P1H0/cD338Va4hvEpqO68mfKsvtoD0rTMkLcPU3bL2xrctE3FHNlIAcDzEK3zqpbvHlrUGFxjWmW4hhlPz6g+Ro3iuHJeUXrIyMwzZPyn/+TOnSlIjqfUHm8CNamwOIRWnu1YdG1Bob95122rLmNjbfrXVDsBGe7i1ZCqIFChGIHU3Uj05/I0JxGJjEKZ0gD9YrMPc7qyEPx3SLjnmFAORfqW/w1SxN2boohais1m5f7SYibiAE6LO+0nlRJ+HWipeG3APibTfXfY0vcSuZr3sB9BTHnIHqTPmIFZ87EVU9n6RjRwxdQaruVuKcM7q0t9ZEkayxnUDmY/5qPA8MF78VwfE0jUjwiANvKPmKucQuNdtC1n8IZBHMLOpjy/lUr2WAyjxKfhgmNNhp6z7+VIch0AB5mxPDT/UM7KNQOq4uU8bwW1bRndBA/tHodBr1FVez3DrVy2zuDoxA3jYGDBGm/wAqh4/iCAtrUH4iOQ0Efp9BRfsVZDWGBP8A8momARlE68j+wp6cYySTcz7YMnmBAooA3Q7M2PBLLR4AsjQZ2lvLU71G/B7RJBRpHRjuTPM0bx2EtlZWcypJBPJdCJjedNPI6UA4Himt4u8AxZPEBmmJkQYP09aku5BO3U35B46sqjGDsa66hThOKu4UKti42WMwQmU5kz+YExuOuxp94B2k7+znIysJDKdwQYI8658t8ZgyoXuHwhIkEaaQPi3OnnVnguNa2MSWGU5tV1EEW1kQdRWjCxI5NzxfqeFEa1XX/PxN8fiXv3nuG86IbhQEMwRQo10VhOzbeVCnvOP/AJbsed1h+9RYK54YmT8RjaSZPprIoLxjHF3NsaKGj11/nUhu7kA0J6X+28fxkZlDMRwKHf7jAHuwct26DBiLrnl60P47xLvL3ek6slsn17lgfrRHA4YKAsmFHz1115TQDEJF5geTpHoWP7GmwOSSCbmf6r4qhEdVC3wa/JlzhnADczO+u5CgwdZidPpVi/gLVrRkA9dT9aO28eFBFq2qkjUc51O55fyoD2ntzaFwwxZxLDkTMg9Dzqe5dgLmv4Mfi4S2gsC+ebkw4XbYLFsENqSNNOkj2oXi+ChQXU5gurKek6wRRPs6zdygBic2+35tvaaKqlvIQiwDMkyQRBEe51HpFcHZX1uHJgw5cAyFQCRfHqAk4XaZAypM6yCT+9bLhLVsoXQNbmCp1AzfmEnqAPetey99XtOjNlZCGUxOmunz6UU4hYHdgOdy6xHiG0sddBm5TuD0osXV+TxETHg8jx/sUBq/HuDMPhLRBbLBJMRoAMx0geVbXWZFLI7qQJEMRt71LhbQFtAdGGjTGvof2P1qLFp4WBKgZT+Yfzpdm374lPgwjALUXX491HO3xJu6t3M2o1J8o3rzC8R8Ftsxhhnj++Sw+hFLCY8nDm2xnOmQaahm0ERy1+lTLiVUtGp0E9FVQoA9h9aLJPnAYTwPGDcx622jL3LjKeRlT8/D9KD9rcZLWrQ0yZ2YDzeFn2B+dV8K/d3/ALw51zZR6EQT8iT7UJxeJNxmusSWLBeswoEj3BPvVAg4IhF2ZZtYwrU3F+Kd7atJPwuW/wAsVRSzpLH0H+9VM/inpoKIX3OJhHPWVB3tZU6MptKa2HeMiO0nKMqkyYnKIGpjWN4r27hbisLbW3VzshRgxnaFIkya6fwa1bJweIs6W8Rju+Cj8jnDuLiezq0eRFUOzgxAGFXHZ+9+/wBk4cXp77LP4pGbxZPg30mttTDc5uDpFF+DY8ZO6YwQSV9CZj50L4ifxbn99/8AUaiTedRHTeuInXLnFQO+bLzgn1I1+e9Riyo3k9a0e7Jzc+vWtQ2s0I1wmLqtJf4jz9v9hWgsW28QzTz1qlcubCvC8adaENiWMbhSD3gbMCdeo/2pndwcuaR4ZERIBJ5cxSoMSQMk6EUztbAtvccn4kVQN4Ksdj5KB5a1HOpIE9X6W4RmvriWlwaMJSZjyy6nQkmP9vOtMNcKEAFJnkZkgyJgEHb9aHtxJ7YzK0QV8xvqPMVvdvZ5YRsT5ddKzFejPaXKCWT8QN2jtut985kscwMzodh7bRRrspfVbDTJm4dvQDQ+nUUN4vhla0HDeJdxzif+K27PXfwyvLNP061pdrxzxvGx6ebXrkw82IEQGJEnwkbTPTSKqLiFZmVSCy/EP63r1b3PnQnAXJxNwnnPvqKyomwP6nu5/J+N0UVTGjDOJW5aOa1cUMZA67TM7KYiDVS3jPwSnizsYYsZbMxGpPPf5VLiBlWTMnTTz3PykaUJwT/jgcgc5n+yk6+4FacJpTPG+pIMmRTfsCHbfEGtrkARddWga6bE+ZP6UoPC3t5Abf3pttm0YDAkHcQD767j5UtXcHmS5eEBVuBQPIzr6CF/xV2H3E+oitAvqMtzEAAQyktrpB0nb1n9qC8XBF1G/iy/Qijlu0zEsCpjzEbbeZqjxjDr+GxbQOqsY1ExOh30+dTxjV+Jv8tvkwfceRRlxEJ3cRsT59IiZoZx8EWgDqCwytrBAnkf60qz96hpHKCDzB6a1T49ez25O4I9gSdPnNdjFOI3mOWwNzxUoYfi19ECK5CiYGUc5nWJ5n51KeO4jLlLnLt8C/rFE+B2s1pRpMc/NjV+7jWVDbJlADIGgO+p6xyqjZV2P2zAngZGwhhkPV1zxFzs7bJuZhEKJM8/L96P32k7nQAa/U/M0O4NZyoCd2Mn0/4q9dvgAswECSdP3qWVtnoTf4GP4cAY++ZlrFsp0MbxpI+R3qDil0FNQJIJ02Ejpy11rbAJnVTO4mTy1M/SquPec3pp8qCimqPlcPj2/IktsybZGwDH3gAT7E1tdeBM0MwzlQCD7VMcSNfqOlaWW58ttNeJXSwgH8sfz+elVLbxA9/etO8nX3P8q8dpp9eJwev5lxr8ioMNhnfVVkSdZH7moFarvDsRlQxvJoATi09+53P4f8y/zryp0xRgVldqINzNLHBcRAysoOZgqd4FYspytlWRJ05V5b4TiLmS5nBZgSoNz8QhSZygmdCDTNwm210WHVbcG5dYlwc6g3CfARsYJ9wK84TYJSwwVCio8s096Fzv8JGgaKQ5SP8AP7ywwA1Fe5wm4LYuzbUFc+twZ2Gv5TqSdazGcCu21LNkYJBcI4ZkB2LKNQNRRvHYF2wtt1WyVFjVnBNwQzfCQIHL61JxXBm02IxLEFWtlAo3OdVXxTpA350wyRDiETs1eK8VrFSYS2GdFMwWUGN4JExVqkLmitrWwaTT2vY3Cd53bd6GJGzAgfDOpUE6HpQ+52csKVDK8MhIYXNQReRD4SkQA5jXWNYrqnXFMPrPnR8cUBVlbKQzBjqZ0DQPTxk1a4x2dsW1UDvA4ZO81DAB2IhDALRB1IH8ruI7L4W2txn73Km4VhP/AG82USNes6a8opGQNL4fIOK+LuLuNxCFCFaZjTnvrtXuDxahACwBGlHX7MYcKDN0BgQpkElpYQwgBVEDUEk9BU47HYbvcma6ZBIEqAYUbsBI8U8jpHuPiBFSw87IH3odVF98Wm2ZYqHhmKRAwJG+hoxwnszh7sS93UEkQoEd5dVT6+FJH97UyIlsdkrIYLca54iuXKQfCVQwZAg6vqPLzrviFVOPmuXGShYg+1xK2NM9UuF4u2t92uEhSG1AnUnT2otxfs7h0t32U3M9sAgEgrBuMAZiZgajrzpToLiAv9w5POyZCCfRuMfFcfaZpRgREVTwWJRbjsWAlco94n9PrQ21tVvBorTmBPv/AF0rtAoh/wBRkyuOuOZd+/IssG8UGAJ8/Kht65mVF2yg+5LEk+fKo12q5bsp3JYgzPXp/wA0QoURWfJ5J5oUDLX/AFQFQGdttRBrMXxUNaNuSdOnQyPQaChEVcx2HVbSMBqfP3ofGqtKDyc2RD1QEmwnEVIAbQxv1qcXkOYZlII6/wA6A15XHCCbE5fqORVCsAYx/fUVRDLI8/5VUvcVDeHYHdvL0oPRzgPD7dy5bzgkF1BWdCI113oDCq8xj9Qz5CEWgDxLNviFoAAOPearcXxqFMqMDJ1jpR7tRwDD2cI1xEh/AQemYzpr001mof8A6TsMwhriSQIEED8INudW566chHOgmJSdhG8rzsyqcbVyPUo4LH2lsoO8AaII5j6VXxeMtlTDCYjY/wAquXuDYb8LL3gzHxSQZDWyR6EEe4PztWezGGIPiumbiqCYlRkBOgME+Ianpt1Jwja5JfqWUJ8dCqqKiX+R0rxng5gfbrTC3ArIu5AXufh3CA8KMyhWElNYhj7jpU6dlMOy5u8uxryWdLiJP1Yx6a1Wp59xTzVmapuJ2Ft3bltSSqsVBMSQDzjSaqzRqC5JmqWxcgGq4E1vQqEGXk2FZVbvKyuqC5//2Q==" alt="Krack">
+            <h2>Krack</h2>
+            <p>Rating: 9.5</p>
+            <p>Cast:Ravi Teja, Sruthi Hassan</p>
+            <p>Story:Krack" is a Telugu action thriller film directed by Gopichand Malineni. The story revolves around an aggressive and ruthless police officer, Veera Shankar, played by Ravi Teja, who is determined to eliminate the criminal elements in society. He goes after a notorious gangster, Katari Krishna, portrayed by Samuthirakani. The movie showcases intense action sequences and cat-and-mouse games between the police officer and the gangster.</p>
+        </div>
+        <div class="movie">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Ao_e1R8E4TYrudJnXVl_qAHaEK&pid=Api&P=0&h=180" alt="sita-ramam">
+            <h2>sita-ramam</h2>
+            <p>Rating: 9.0</p>
+            <p>Cast: Dulkar salman, Mrunal Takor, Rashimaka mandana</p>
+            <p>Story: "Sita Ramam" is a romantic drama that follows the story of Sita and Ram, a couple deeply in love. However, their relationship faces challenges due to societal norms and family expectations. The film explores themes of love, sacrifice, and the struggle to overcome societal barriers to be together.</p>
+        </div>
+        <div class="movie">
+            <img src="https://goldandhra.com/wp-content/uploads/2023/04/Virupaksha.jpg" alt="Virupaaksha">
+            <h2>Virupaaksha</h2>
+            <p>Rating: 8.9</p>
+            <p>Cast: SAI DHARAM TEJ, SAMYUKTHA MEENAN</p>
+            <p>Story: Virupaksha" is a gripping thriller that follows the story of a righteous police officer, Virupaksha, as he battles corruption within the force while trying to solve a high-profile murder case. The film delves into the complexities of loyalty, justice, and the blurred lines between right and wrong. With intense performances and a well-crafted narrative, "Virupaksha" is a suspenseful roller-coaster ride that keeps audiences on the edge of their seats.</p>
+        </div>
+        <div class="movie">
+            <img src="https://b4blaze.com/wp-content/uploads/2023/06/SPY-Movie121.jpg" alt="Spy">
+            <h2>Spy</h2>
+            <p>Rating: 8.5</p>
+            <p>Cast: NIKHIL, AISHWARYA MEENAN</p>
+            <p>Story: In "Shadows of Deception," a skilled MI6 agent, Alex Steele, is on a relentless mission to uncover a secret organization's plot to destabilize global peace. As he infiltrates their ranks, he uncovers a web of lies, betrayal, and international intrigue. With the clock ticking and lives at stake, Alex must decipher the truth and expose the conspirators before it's too late.</p>
+        </div>
+        <div class="movie">
+            <img src="https://indiaglitz-media.s3.amazonaws.com/telugu/home/baby-movie-review-1.jpg" alt="Baby">
+            <h2>Baby</h2>
+            <p>Rating: 7.8</p>
+            <p>Cast: ANAND DEVARAKONDA, VAISHNAVI</p>
+            <p>Story: The narrative revolves around Anand (Anand Devarakonda) and Vaishnavi (Vaishnavi Chaitanya), who both come from the same village and fall in love while attending the same school. As they grow older, Anand becomes an auto driver, and Vaishnavi pursues higher studies in the city. There, she befriends a wealthy college mate, Viraj (Viraj Ashwin), who develops feelings for her. The love triangle leads to conflicts between Anand and Vaishnavi. The movie explores the dynamics of a girl caught between two boys and aims to convey a message about not compromising one's life due to fleeting infatuations.</p>
+        </div>
+        <div class="movie">
+            <img src="https://static.toiimg.com/photo/96346895.cms" alt="18 Pages">
+            <h2>18 Pages</h2>
+            <p>Rating: 7.2</p>
+            <p>Cast: NIKHIL, ANUPAMA</p>
+            <p>Story: The storyline of a book, film, or play is its story and the way in which it develops. The surprise twists in the storyline are the film's greatest strength.</p>
+        </div>
+        <div class="movie">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00316318-quhjzskscx-landscape.jpg" alt="Dasara">
+            <h2>Dasara</h2>
+            <p>Rating: 8.2</p>
+            <p>Cast: NANI,KEERTHI SURESH</p>
+            <p>Story: Nani's Dasara, like its recent counterparts like Rangasthalam (2018) and Narappa (2021), is a very familiar tale about the ugly side of caste politics. The familiarity also seeps into the fashion in which it narrates a tale of friendship and revenge.</p>
+        </div>
+        <!-- Add more movie entries as needed -->
+    </div>
+</body>
+</html>
